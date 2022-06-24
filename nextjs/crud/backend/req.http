@@ -1,0 +1,30 @@
+// lista de clientes:
+GET http://localhost:3000/clientes HTTP/1.1
+
+
+// cliente por id:
+GET http://localhost:3000/clientes/1 HTTP/1.1
+
+
+// inserir um cliente:
+POST http://localhost:3000/clientes HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Maria da Silva",
+    "idade": 20
+}
+
+
+// alterar um cliente:
+PUT http://localhost:3000/clientes/1 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Maria Clara",
+    "idade": 18
+}
+
+
+// remover um cliente
+DELETE http://localhost:3000/clientes/1 HTTP/1.1
